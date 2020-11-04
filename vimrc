@@ -42,6 +42,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tpope/vim-fugitive'
+Plug 'ctrlpvim/ctrlp.vim'
 
 call plug#end()
 
@@ -102,3 +103,9 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
     \ 'Ignored'   : '☒',
     \ "Unknown"   : "?"
     \ }
+
+" Ctrlp
+let g:ctrlp_map = '<Leader>,'
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+
+nmap <Leader>; :CtrlP<CR>
