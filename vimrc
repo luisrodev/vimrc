@@ -37,11 +37,11 @@ endif
 call plug#begin('~/.vim/plugged')
 
 Plug 'chriskempson/base16-vim'
-Plug 'preservim/nerdtree'
+Plug 'preservim/nerdtree' |
+      \ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
-Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tpope/vim-fugitive'
 Plug 'ctrlpvim/ctrlp.vim'
 
@@ -84,6 +84,8 @@ let NERDTreeQuitOnOpen=1
 let NERDTreeWinSize=35
 let NERDTreeCaseSensitiveSort=1
 let NERDTreeIgnore = ['^node_modules$']
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
 
 " Airline
 let g:airline_powerline_fonts = 0	" Enables powerline fonts
@@ -101,17 +103,17 @@ let g:gitgutter_sign_modified_removed = '-'
 
 " NERDTree Git Plugin
 let g:NERDTreeGitStatusIndicatorMapCustom = {
-    \ "Modified"  : "✹",
-    \ "Staged"    : "✚",
-    \ "Untracked" : "✭",
-    \ "Renamed"   : "➜",
-    \ "Unmerged"  : "═",
-    \ "Deleted"   : "",
-    \ "Dirty"     : "✗",
-    \ "Clean"     : "✔︎",
-    \ 'Ignored'   : '☒',
-    \ "Unknown"   : "?"
-    \ }
+                \ 'Modified'  :'✹',
+                \ 'Staged'    :'✚',
+                \ 'Untracked' :'✭',
+                \ 'Renamed'   :'➜',
+                \ 'Unmerged'  :'═',
+                \ 'Deleted'   :'✖',
+                \ 'Dirty'     :'✗',
+                \ 'Ignored'   :'☒',
+                \ 'Clean'     :'✔︎',
+                \ 'Unknown'   :'?',
+                \ }
 
 " Ctrlp
 let g:ctrlp_map = '<Leader>,'
