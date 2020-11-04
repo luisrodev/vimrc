@@ -47,6 +47,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 
 " Javascript
 Plug 'pangloss/vim-javascript'
+Plug 'maxmellon/vim-jsx-pretty'
 
 call plug#end()
 
@@ -116,3 +117,5 @@ nmap <Leader>; :CtrlP<CR>
 
 " Javascript
 let g:javascript_plugin_jsdoc = 1
+
+let g:vim_jsx_pretty_colorful_config = 1
