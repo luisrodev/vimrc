@@ -41,6 +41,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
