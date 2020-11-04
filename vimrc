@@ -15,6 +15,7 @@ set undodir=~/.vim/undodir
 
 set encoding=utf-8
 set autoindent			" autoindent always ON.
+set tabstop=2 shiftwidth=2 expandtab softtabstop=2   "tabs = 2 spaces
 
 set fillchars+=vert:\┊
 set laststatus=1		" always show statusbar
