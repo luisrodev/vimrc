@@ -45,6 +45,10 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tpope/vim-fugitive'
 Plug 'ctrlpvim/ctrlp.vim'
 
+" Javascript
+Plug 'pangloss/vim-javascript'
+Plug 'maxmellon/vim-jsx-pretty'
+
 call plug#end()
 
 " Keyboard Shortcuts
@@ -110,3 +114,8 @@ let g:ctrlp_map = '<Leader>,'
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
 nmap <Leader>; :CtrlP<CR>
+
+" Javascript
+let g:javascript_plugin_jsdoc = 1
+
+let g:vim_jsx_pretty_colorful_config = 1
