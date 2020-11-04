@@ -64,6 +64,10 @@ imap <C-P> <Esc>:bprev<CR>i
 nmap n :m +1<CR>
 nmap m :m -2<CR>
 
+noremap <Leader>\t :botright vertical terminal<CR>
+
+" End Keyboard Shortcuts
+
 " ColorScheme
 let base16colorspace=256	" Access colors present in 256 colorspace
 colorscheme base16-default-dark
