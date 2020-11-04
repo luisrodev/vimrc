@@ -15,3 +15,5 @@ Run `:PlugInstall` inside VIM and you will be ready to code.
 * **nerdtree-git-plugin** - Git plugin to see changes into nerdtree view.
 * **vim-fugitive** - The premier Vim plugin for Git. Or maybe it's the premier Git plugin for Vim? 
 * **ctrlp** - Full path fuzzy file, buffer, mru, tag, ... finder.
+* **vim-javascript** - Javascript syntax highlighting.
+* **vim-jsx-pretty** - React syntax highlighting also support tsx files.
