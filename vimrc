@@ -34,8 +34,11 @@ endif
 
 
 call plug#begin('~/.vim/plugged')
+
 Plug 'chriskempson/base16-vim'
 Plug 'preservim/nerdtree'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 
@@ -68,3 +71,10 @@ let NERDTreeQuitOnOpen=1
 let NERDTreeWinSize=35
 let NERDTreeCaseSensitiveSort=1
 let NERDTreeIgnore = ['^node_modules$']
+
+" Airline
+let g:airline_powerline_fonts = 0	" Enables powerline fonts
+let g:airline_theme = 'base16'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#formatter = 'unique_tail'
