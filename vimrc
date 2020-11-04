@@ -35,6 +35,7 @@ endif
 
 call plug#begin('~/.vim/plugged')
 Plug 'chriskempson/base16-vim'
+Plug 'preservim/nerdtree'
 
 call plug#end()
 
@@ -56,3 +57,14 @@ let base16colorspace=256	" Access colors present in 256 colorspace
 colorscheme base16-default-dark
 set background=dark
 set colorcolumn=81		" Add the color to the column
+
+" Plugin Configs
+
+" NERDTree
+map <Leader>nt :NERDTreeToggle<CR>
+map <Leader>nf :NERDTreeFind<CR>
+let NERDTreeQuitOnOpen=1
+"let NERDTreeShowHidden=1
+let NERDTreeWinSize=35
+let NERDTreeCaseSensitiveSort=1
+let NERDTreeIgnore = ['^node_modules$']
