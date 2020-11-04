@@ -26,6 +26,8 @@ set showmatch			" highlight matching parentheses and brackets
 
 set hidden
 
+syntax on
+
 if (has('termguicolors'))
 	set termguicolors
 endif
@@ -39,6 +41,18 @@ call plug#end()
 " Keyboard Shortcuts
 let mapleader = ","
 
+" Switching buffers
+map <C-N> :bnext<CR>
+map <C-P> :bprev<CR>
+imap <C-N> <Esc>:bnext<CR>i
+imap <C-P> <Esc>:bprev<CR>i
+
+" Move line to DOWM or UP
+nmap n :m +1<CR>
+nmap m :m -2<CR>
+
 " ColorScheme
 let base16colorspace=256	" Access colors present in 256 colorspace
 colorscheme base16-default-dark
+set background=dark
+set colorcolumn=81		" Add the color to the column
