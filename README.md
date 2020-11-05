@@ -20,3 +20,6 @@ Run `:PlugInstall` inside VIM and you will be ready to code.
 ### Javascript 
 * **vim-javascript** - Javascript syntax highlighting.
 * **vim-jsx-pretty** - React syntax highlighting also support tsx files.
+* **syntastic** - Syntax checker plugin
+* **syntastic-local-eslint.vim** - Prefer local repo installed on the project over global config.
+* **vim-prettier** - Prettier wrapper for vim, fixer.
