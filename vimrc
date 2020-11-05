@@ -102,8 +102,8 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
     \ 'Clean'     :'✔︎',
     \ 'Unknown'   :'?',
     \ }
-"let g:NERDTreeGitStatusUseNerdFonts = 1 " you should install nerdfonts by yourself. default: 0
 
+let g:NERDTreeGitStatusUseNerdFonts = 1 " you should install nerdfonts by yourself. default: 0
 " Airline
 let g:airline_powerline_fonts = 0	" Enables powerline fonts
 let g:airline_theme = 'base16'
